@@ -1,0 +1,151 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+img{ float: left;}
+img{ float: left;}
+span{ clear: left; display: block;}
+
+li:first-child{ background: greenyellow;}
+li:last-child{ background: lightsalmon;}
+
+#two{ 
+  background-image: linear-gradient(red, blue);
+padding : 3rem;
+}
+#three{ 
+  background-image: linear-gradient(to bottom right, yellow, purple); width: 200px;
+padding: 5rem;}
+
+#degreeSpefic{ 
+  background-image: linear-gradient(20deg, green, blue); width: 150px;
+padding: 5rem;
+}
+#radial{ 
+  background-image: radial-gradient(red, yellow); 
+  padding: 4rem; 
+  width: 300px;
+}
+
+#gloomy{ background-image: radial-gradient(at top right, black, lightgrey); padding: 5rem; width: 300px;}
+section.position {
+  background: gold;
+  border: 3px solid blue;
+  height: 200px;
+  padding: 10px;
+  position: relative; /* This turns the <section> into a point of reference for the <p> */
+}
+
+#hover{ background-image: radial-gradient(closest-corner at 20px 20px, green, blue); padding: 1rem; width: 300px;}
+#hover:hover{ background-image: radial-gradient(farthest-side at 20px 20px, green, blue)}
+
+#transition{ background: lightgrey; color: grey;}
+#transition:hover{ background: yellow; color: red;}
+#transition.with-transition{ transition: 1s;}
+
+a{ background: lightgrey; color: grey;}
+a:hover{ background: yellow; color: green;}
+a.with-fast-transition{ transition-duration: 0.5s;}
+a.with-slow-transition{ transition: 3s;}
+
+.ex-trans{ background: lightgrey; color: grey;}
+.ex-trans:hover{ background: yellow; border: 5px solid blue; color: green;}
+.ex-trans.with-background-transition{ transition-duration: 2s; transition-property: background;}
+.ex-trans.with-all-transition{ transition-duration: 2s;}
+
+div{ left: 0; position: relative; transition: 1s;}
+main:hover div{ left: 200px;}
+.ease{ transition-timing-function: ease;} /* Default behavior */
+.linear{ transition-timing-function: linear;} /* Constant speed */
+.ease-in{ transition-timing-function: ease-in;}
+.ease-out{ transition-timing-function: ease-out;}
+.ease-in-out{ transition-timing-function: ease-out;}
+
+/* Animation buttons */
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 50px 50px rgba(0,0,0,0.1);}
+}
+
+.loading-button{ animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;font-size: 40px; height: 5rem; background-color: orangered;}
+
+/* Animation buttons */
+@keyframes around {
+  0%  { left: 0; top: 0;}
+  25% { left: 240px; top: 0;}
+  50% { left: 240px; top: 140px;}
+  75% { left: 0; top: 140px;}
+  100%{ left: 0; top: 0;}
+}
+.helloanimi{ animation: around 4s linear infinite;}
+
+/* Rotating animation */
+@keyframes rotating {
+  0%  { transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+}
+.rotating{ animation: rotating 4s linear infinite; font-size: 30px; border-radius: 50%;  padding: 3rem; background-color: blue;
+}
+
+@keyframes scaling {
+  0%  { transform: scale(1);}
+  20%{ transform: scale(2);}
+  40%{ transform: scale(0.5);}
+  60%{ transform: scale(0);}
+  80%{ transform: scale(-1);}
+  100%{ transform: scale(1);}
+}
+.circle{ animation: scaling 10s steps(1) 0s infinite;padding: 4rem; border-radius: 50%; background-color: orangered; color:#87f708;}
+
+/* //3d animation */
+@keyframes zooming {
+  0%  { transform: translate3d(0, 0, 0);}
+  100%{ transform: translate3d(0, 0, 200px);}
+}
+.square{ animation: zooming 5s alternate; font-size: 30px; background-color: orchid; padding: 5rem;}
+
+
+
+.button-grey  { background-image: linear-gradient(#f2f2f2, #f2f2f2);}
+.button-yellow{ background-image: linear-gradient(#fce374, #fcdf5b);}
+.button-orange{ background-image: linear-gradient(#f58a38, #f57c20);}
+.button-red   { background-image: linear-gradient(#ed6d64, #ed574c);}
+.button-purple{ background-image: linear-gradient(#847bba, #7568ba);}
+.button-blue  { background-image: linear-gradient(#42b0e3, #2ba9e3);}
+.button-green { background-image: linear-gradient(#97cc76, #8bcc62);}
+
+
+p.position{
+  background: limegreen;
+  border: 3px solid blue;
+  color: white;
+  padding: 30px;
+  position: absolute; /* This makes the <p> freely movable */
+  bottom: 10px; /* 10px from the bottom */
+  left: 80px; /* 20px from the left */
+}
